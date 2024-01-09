@@ -71,14 +71,16 @@
 
     <TextView
         android:id="@+id/affirmation"
-        android:layout_width="387dp"
-        android:layout_height="111dp"
-        android:text="@string/sample_affirmation_text"
-        android:textSize="24sp"
-        android:textAlignment="center"
+        android:layout_width="362dp"
+        android:layout_height="200dp"
         android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:text="@string/sample_affirmation_text"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
