@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Cheerify</string>
+    <string name="your_daily_affirmation_companion">your daily affirmation companion</string>
+    <string name="cheerify">Cheerify</string>
+    <string name="menu_text">≡</string>
+    <string name="arrow_text">↺</string>
+    <string name="plus_text">+</string>
+    <string name="heart_text">♡</string>
+    <string name="sample_affirmation_text">You are capable of achieving amazing things – believe in yourself and your abilities.</string>
 </resources>
