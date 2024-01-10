@@ -7,7 +7,7 @@
     android:background="#FAF7F2">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/menu_button"
+        android:id="@+id/home_button"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:background="@drawable/circular_button_background"
@@ -86,22 +86,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.442" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/custom_rounded_button"
-        android:layout_width="205dp"
-        android:layout_height="47dp"
-        android:background="@drawable/rounded_button_background"
-        android:fontFamily="@font/inter"
-        android:text="@string/custom_text_with_words"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.605" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/favorite_rounded_button"
@@ -119,6 +103,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.524" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/custom_rounded_button"
+        android:layout_width="205dp"
+        android:layout_height="47dp"
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/inter"
+        android:text="@string/custom_text_with_words"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF7F2"
-    tools:context=".MainActivity">
+    android:background="#FAF7F2">
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/menu_button"
+        android:id="@+id/home_button"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:background="@drawable/circular_button_background"
-        android:text="@string/menu_text"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/home_text"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        android:fontFamily="@font/inter_semibold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
@@ -28,9 +27,9 @@
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
         android:text="@string/cheerify"
         android:textSize="30sp"
-        android:fontFamily="@font/inter_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -42,9 +41,9 @@
         android:id="@+id/app_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
         android:text="@string/your_daily_affirmation_companion"
         android:textSize="10sp"
-        android:fontFamily="@font/inter_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,68 +52,33 @@
         tools:ignore="SmallSp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/add_button"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:background="@drawable/circular_button_background"
-        android:text="@string/plus_text"
+        android:id="@+id/save_affirmation"
+        android:layout_width="205dp"
+        android:layout_height="47dp"
+        android:background="@drawable/rounded_button_background"
+        android:fontFamily="@font/inter"
+        android:text="@string/save_affirmation"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="42sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.527" />
 
-    <TextView
-        android:id="@+id/affirmation"
-        android:layout_width="362dp"
-        android:layout_height="200dp"
-        android:fontFamily="@font/inter_bold"
-        android:gravity="center"
-        android:text="@string/sample_affirmation_text"
-        android:textAlignment="center"
-        android:textSize="24sp"
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="383dp"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/refresh_button"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:background="@drawable/circular_button_background"
-        android:fontFamily="@font/inter_semibold"
-        android:text="@string/arrow_text"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/favorite_button"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:background="@drawable/circular_button_background"
-        android:text="@string/heart_text"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="40sp"
-        android:fontFamily="@font/inter_semibold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.415" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

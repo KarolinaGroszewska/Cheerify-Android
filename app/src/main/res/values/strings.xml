@@ -11,6 +11,7 @@
     <string name="home_text_with_words">⌂ All Affirmations</string>
     <string name="favorite_text_with_words">♡ Favorite Affirmations</string>
     <string name="custom_text_with_words">+ Custom Affirmations</string>
+    <string name="save_affirmation">+ Save Affirmation</string>
 
 
 </resources>

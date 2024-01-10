@@ -1,21 +1,13 @@
 package com.example.cheerify
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
-import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     private lateinit var affirmation: String
@@ -26,6 +18,16 @@ class MainActivity : AppCompatActivity() {
         affirmation = String()
         getAffirmation()
         refreshAffirmation(refresh)
+        val menu = findViewById<Button>(R.id.menu_button)
+        menu.setOnClickListener {
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+        val add = findViewById<Button>(R.id.add_button)
+        add.setOnClickListener {
+            val intent = Intent(this, CreateActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun getAffirmation(){
@@ -57,4 +59,5 @@ class MainActivity : AppCompatActivity() {
             getAffirmation()
         }
     }
+
 }
