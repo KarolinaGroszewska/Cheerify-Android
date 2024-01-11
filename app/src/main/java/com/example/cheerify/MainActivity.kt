@@ -18,16 +18,6 @@ class MainActivity : AppCompatActivity() {
         affirmation = String()
         getAffirmation()
         refreshAffirmation(refresh)
-        val menu = findViewById<Button>(R.id.menu_button)
-        menu.setOnClickListener {
-            val intent = Intent(this, MenuActivity::class.java)
-            startActivity(intent)
-        }
-        val add = findViewById<Button>(R.id.add_button)
-        add.setOnClickListener {
-            val intent = Intent(this, CreateActivity::class.java)
-            startActivity(intent)
-        }
     }
 
     private fun getAffirmation(){
